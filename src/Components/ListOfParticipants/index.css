@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.home-main-container {
+  padding: 15px;
+  background-color: #cac8c8;
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 992px) {
+  .home-main-container {
+    flex-direction: row;
+  }
+}
+
+.details-box {
+  font-family: "Roboto";
+  background-color: #beb3b3;
+  border-radius: 3px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-box-heading {
+  color: #181818;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Roboto";
+  margin-bottom: 0px;
+}
+
+.max-participants {
+  color: #8d8d8d;
+  font-size: 12px;
+  margin-top: 0px;
+  font-weight: 500;
+}
+.details-box-labels {
+  color: #181818;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.details-box-inputs {
+  color: #8d8d8d;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 8px;
+  outline: none;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.details-box-add-button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "Roboto";
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.error {
+  color: #cf4242;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .details-box {
+    width: 25vw;
+    margin-right: 20px;
+    border-radius: 6px;
+    padding: 25px;
+    align-self: flex-start;
+  }
+  .details-box-heading {
+    font-size: 35px;
+  }
+
+  .max-participants {
+    font-size: 16px;
+  }
+  .details-box-labels {
+    font-size: 18px;
+  }
+
+  .details-box-inputs {
+    font-size: 20px;
+    border-radius: 8px;
+    width: 90%;
+  }
+
+  .details-box-add-button {
+    font-size: 17px;
+    border-radius: 7px;
+  }
+
+  .error {
+    font-size: 13px;
+  }
+}
+
+/*List Content*/
+
+.list-container {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: "Roboto";
+}
+
+.runners-list-heading {
+  color: #181818;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto";
+  margin-bottom: 0px;
+}
+
+table {
+  width: 100%;
+  margin-top: 15px;
+  overflow-x: auto;
+}
+
+th {
+  width: 25%;
+  text-align: start;
+  color: #8d8d8d;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 15px;
+  background-color: white;
+}
+
+.table-name-column {
+  overflow-x: hidden;
+  margin-right: 0px;
+}
+
+.table-data-row {
+}
+
+td {
+  width: 25%;
+  text-align: start;
+  color: #181818;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #f5f0f0;
+  border-bottom: 10px solid #ffffff;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+@media screen and (min-width: 992px) {
+  .list-container {
+    background-color: #ffffff;
+    padding: 25px;
+  }
+
+  .runners-list-heading {
+    font-size: 25px;
+  }
+
+  table {
+    margin-top: 20px;
+  }
+
+  th {
+    font-size: 15px;
+    padding: 18px;
+  }
+
+  .table-name-column {
+    overflow-x: hidden;
+    margin-right: 0px;
+  }
+
+  td {
+    font-size: 20px;
+    padding: 13px;
+    margin-top: 16px;
+    border-bottom: 12px solid #ffffff;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-right: 15px;
+}
+
+.link-item {
+  text-decoration: none;
+}
+
+.start-race-button {
+  color: #ffffff;
+  background-color: #e65123;
+  border: none;
+  outline: none;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  /*border-top-left-radius: 50%;
+  */
+  -ms-transform: skewX(-30deg);
+  -webkit-transform: skewX(-30deg);
+  transform: skewX(-30deg);
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+}
